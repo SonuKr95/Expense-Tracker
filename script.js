@@ -14,19 +14,6 @@ function createTable() {
     "<tr class='table-header' ><th>Name</th><th>Date</th><th>Amount</th></tr>"
   );
   expenseDatadiv.appendChild(CreateexpenseTable);
-  // const tableData = document.querySelector(".table-data");
-  // if (tableData.childElementCount < 4) {
-  //   tableData.insertAdjacentHTML(
-  //     "beforeend",
-  //     "<td class='expense-name' ></td><td class='expense-date' ></td><td class='expense-Amount'></td></tr> <button>X</button>"
-  //   );
-  // } else if (tableData.childElementCount === 4) {
-  //   const newrow = CreateexpenseTable.insertRow();
-  //   newrow.insertAdjacentHTML(
-  //     "beforeend",
-  //     "<td class='expense-name' ></td><td class='expense-date' ></td><td class='expense-Amount'></td></tr> <button>X</button>"
-  //   );
-  // }
 }
 
 function createTableData() {
@@ -75,12 +62,6 @@ addData.addEventListener("click", () => {
         amt.insertAdjacentText("beforeend", amount);
       }
     });
-
-    // expenseDateTable.forEach((date) => console.log(date.textContent.length));
-    // expenseAmountTable.forEach((amt) => console.log(amt.textContent.length));
-
-    // console.log(expenseDateTable);
-    // console.log(expenseAmountTable);
   }
 });
 
